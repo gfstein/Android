@@ -29,7 +29,7 @@
         android:text="@string/orcamento"
         android:layout_marginTop="14dp"
         android:id="@+id/tvOrcamento"
-        android:layout_marginLeft="56dp"
+        android:layout_marginLeft="55dp"
         android:layout_marginStart="56dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
