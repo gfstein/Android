@@ -2,7 +2,6 @@ package avmb.com.br.pontoavmb;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
@@ -15,11 +14,13 @@ import android.view.MenuItem;
 import android.view.View;
 
 import avmb.com.br.pontoavmb.views.FragmentCadastro;
+import avmb.com.br.pontoavmb.views.index;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, FragmentCadastro.OnFragmentInteractionListener  {
 
     View main;
+    FragmentManager fm = getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +30,8 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         main = findViewById(R.id.content_main);
-
-//        createSpinner();
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();*/
-                FragmentManager fm = getSupportFragmentManager();
-                fm.beginTransaction().replace(R.id.content_main, new FragmentCadastro())
-                        .commit();
-
-            }
-        });
+        fm.beginTransaction().replace(R.id.content_main, new index())
+                .commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -55,22 +43,6 @@ public class MainActivity extends AppCompatActivity
         assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
     }
-
-   /* private void createSpinner() {
-        //TODO: pegar do banco depois
-        List<Grupo> itens = new ArrayList<>();
-        itens.add(new Grupo("Leite"));
-        itens.add(new Grupo("Carne"));
-        itens.add(new Grupo("Frutas"));
-
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-
-        ArrayAdapter<Grupo> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, itens);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        assert spinner != null;
-        spinner.setAdapter(adapter);
-
-    }*/
 
     @Override
     public void onBackPressed() {

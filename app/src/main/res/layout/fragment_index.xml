@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="avmb.com.br.pontoavmb.views.index">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_gasto"
+            android:id="@+id/tvTotalGasto"
+            android:layout_alignBaseline="@+id/tvOrcamento"
+            android:layout_alignBottom="@+id/tvOrcamento"
+            android:layout_toLeftOf="@+id/fab"
+            android:layout_toStartOf="@+id/fab" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orcamento"
+            android:layout_marginTop="14dp"
+            android:id="@+id/tvOrcamento"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvTotalGasto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:layout_above="@+id/fab" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            android:id="@+id/fab"
+            app:backgroundTint="@android:color/darker_gray"
+            app:rippleColor="@android:color/holo_red_dark"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</FrameLayout>
