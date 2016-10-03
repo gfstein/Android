@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText3"
+                android:id="@+id/nomeItem"
                 android:hint="@string/descricao" />
         </android.support.design.widget.TextInputLayout>
 
@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText6"
+                    android:id="@+id/qtdItem"
                     android:hint="QTD"
                     android:layout_weight="1" />
             </android.support.design.widget.TextInputLayout>
@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
                     android:ems="10"
-                    android:id="@+id/editText7"
+                    android:id="@+id/valorItem"
                     android:layout_weight="1"
                     android:hint="Valor" />
             </android.support.design.widget.TextInputLayout>
@@ -65,10 +65,10 @@
         </LinearLayout>
 
         <Button
-            android:text="Button"
+            android:text="@string/cadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button2" />
+            android:id="@+id/btnCadastro" />
 
     </LinearLayout>
 

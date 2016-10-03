@@ -1,12 +1,14 @@
 package avmb.com.br.pontoavmb.model;
 
+import com.orm.SugarRecord;
+
 /**
  * Created by guilh on 29/09/2016.
  */
 
-public class Grupo {
+public class Grupo extends SugarRecord{
 
-    private Integer id;
+    private Long id;
     private String nome;
     private String descricao;
 
@@ -22,11 +24,11 @@ public class Grupo {
         return nome;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
