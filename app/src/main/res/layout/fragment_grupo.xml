@@ -12,7 +12,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nome" />
+            android:hint="@string/nome"
+            android:id="@+id/edNome"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -22,7 +23,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/descricao" />
+            android:hint="@string/descricao"
+            android:id="@+id/edDesc"/>
 
     </android.support.design.widget.TextInputLayout>
 
@@ -30,5 +32,5 @@
         android:text="@string/cadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3" />
+        android:id="@+id/btnGrupo" />
 </LinearLayout>

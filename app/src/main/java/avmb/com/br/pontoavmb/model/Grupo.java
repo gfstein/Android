@@ -1,6 +1,7 @@
 package avmb.com.br.pontoavmb.model;
 
 import com.orm.SugarRecord;
+import com.orm.dsl.Unique;
 
 /**
  * Created by guilh on 29/09/2016.
@@ -9,6 +10,7 @@ import com.orm.SugarRecord;
 public class Grupo extends SugarRecord{
 
     private Long id;
+    @Unique
     private String nome;
     private String descricao;
 

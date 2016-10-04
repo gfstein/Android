@@ -14,6 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.orm.SugarContext;
+
 import avmb.com.br.pontoavmb.views.GrupoFragment;
 import avmb.com.br.pontoavmb.views.index;
 
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        SugarContext.init(this);
 
         main = findViewById(R.id.content_main);
         initFragment(new index(), null);

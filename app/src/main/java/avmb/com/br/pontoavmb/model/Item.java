@@ -17,8 +17,7 @@ public class Item extends SugarRecord{
     public Item() {
     }
 
-    public Item(Long id, String nome, Float preco, Grupo grupo, Integer qtd) {
-        this.id = id;
+    public Item(String nome, Float preco, Grupo grupo, Integer qtd) {
         this.nome = nome;
         this.preco = preco;
         this.grupo = grupo;

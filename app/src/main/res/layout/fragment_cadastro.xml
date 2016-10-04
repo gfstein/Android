@@ -59,7 +59,7 @@
                     android:ems="10"
                     android:id="@+id/valorItem"
                     android:layout_weight="1"
-                    android:hint="Valor" />
+                    android:hint="@string/valor" />
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
