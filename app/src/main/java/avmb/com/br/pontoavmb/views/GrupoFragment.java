@@ -72,7 +72,7 @@ public class GrupoFragment extends Fragment {
         try{
             GrupoService.save(grupo);
             Toast.makeText(getContext(), getString(R.string.grupo_done), Toast.LENGTH_LONG).show();
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_main, new index() )
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_main, new Index() )
                     .commitAllowingStateLoss();
         } catch (Exception e){
             e.printStackTrace();

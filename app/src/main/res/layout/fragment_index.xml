@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="avmb.com.br.pontoavmb.views.index">
+    tools:context="avmb.com.br.pontoavmb.views.Index">
 
 
     <RelativeLayout
@@ -18,7 +18,8 @@
             android:layout_alignBaseline="@+id/tvSaldo"
             android:layout_alignBottom="@+id/tvSaldo"
             android:layout_toLeftOf="@+id/fab"
-            android:layout_toStartOf="@+id/fab" />
+            android:layout_toStartOf="@+id/fab"
+            android:textColor="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,7 +31,8 @@
             android:layout_marginStart="56dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:clickable="true"/>
 
         <ListView
             android:layout_width="match_parent"

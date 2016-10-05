@@ -18,7 +18,7 @@ import android.view.View;
 import com.orm.SugarContext;
 
 import avmb.com.br.pontoavmb.views.GrupoFragment;
-import avmb.com.br.pontoavmb.views.index;
+import avmb.com.br.pontoavmb.views.Index;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
         SugarContext.init(this);
 
         main = findViewById(R.id.content_main);
-        initFragment(new index(), null);
+        initFragment(new Index(), null);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity
 
         switch (id){
             case R.id.view_index :
-                initFragment(new index(), null);
+                initFragment(new Index(), null);
                 break;
 
             case R.id.view_cad_grupo:
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 
         if(keyCode == KeyEvent.KEYCODE_BACK){
-            initFragment(new index(), null);
+            initFragment(new Index(), null);
             return  true;
         }
 

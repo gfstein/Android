@@ -96,7 +96,7 @@ public class FragmentCadastro extends Fragment implements View.OnClickListener, 
 
         Toast.makeText(getContext(), "Item cadastrado com sucesso", Toast.LENGTH_LONG).show();
 
-        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_main, new index() )
+        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_main, new Index() )
                 .commitAllowingStateLoss();
     }
 
