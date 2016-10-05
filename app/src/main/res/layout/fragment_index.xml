@@ -15,17 +15,17 @@
             android:layout_height="wrap_content"
             android:text="@string/total_gasto"
             android:id="@+id/tvTotalGasto"
-            android:layout_alignBaseline="@+id/tvOrcamento"
-            android:layout_alignBottom="@+id/tvOrcamento"
+            android:layout_alignBaseline="@+id/tvSaldo"
+            android:layout_alignBottom="@+id/tvSaldo"
             android:layout_toLeftOf="@+id/fab"
             android:layout_toStartOf="@+id/fab" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/orcamento"
+            android:text="@string/saldo"
             android:layout_marginTop="14dp"
-            android:id="@+id/tvOrcamento"
+            android:id="@+id/tvSaldo"
             android:layout_marginLeft="55dp"
             android:layout_marginStart="56dp"
             android:layout_alignParentTop="true"
@@ -38,17 +38,16 @@
             android:layout_below="@+id/tvTotalGasto"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="23dp"
-            android:layout_above="@+id/fab" />
+            android:layout_above="@+id/fab"
+            android:id="@+id/listItens"/>
 
         <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
             app:fabSize="mini"
-            app:srcCompat="@android:drawable/ic_menu_add"
+            app:srcCompat="@android:drawable/ic_input_add"
             android:id="@+id/fab"
-            app:backgroundTint="@android:color/darker_gray"
-            app:rippleColor="@android:color/holo_red_dark"
             android:layout_marginRight="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="37dp"

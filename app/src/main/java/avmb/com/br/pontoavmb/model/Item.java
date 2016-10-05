@@ -24,6 +24,11 @@ public class Item extends SugarRecord{
         this.qtd = qtd;
     }
 
+    @Override
+    public String toString() {
+        return nome + " - " + preco;
+    }
+
     public Long getId() {
         return id;
     }

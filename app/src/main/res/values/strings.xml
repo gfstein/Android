@@ -23,4 +23,7 @@
     <string name="obrigatorio">Campo obrigatório</string>
     <string name="grupo_done">Grupo cadastrado com sucesso</string>
     <string name="valor">Valor</string>
+    <string name="listar_alterar_grupo">Listar/Alterar Grupo</string>
+    <string name="grupos">Grupos</string>
+    <string name="saldo">Saldo</string>
 </resources>
