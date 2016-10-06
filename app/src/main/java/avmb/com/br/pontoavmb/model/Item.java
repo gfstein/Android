@@ -26,7 +26,8 @@ public class Item extends SugarRecord{
 
     @Override
     public String toString() {
-        return nome + " - " + preco;
+        return "Nome: " + nome + "\n" +
+                "Preço: " + preco + " | Quantidade: " + qtd;
     }
 
     public Long getId() {

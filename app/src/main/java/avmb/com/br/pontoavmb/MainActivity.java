@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity
                 fragment.setArguments( args );
             }
 
-            supportFragmentManager.beginTransaction().replace( R.id.content_main, fragment )
+            supportFragmentManager.beginTransaction().replace( R.id.content_main, fragment, fragment.getClass().getName())
                     .commitAllowingStateLoss();
         }
     }
